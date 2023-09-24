@@ -313,8 +313,11 @@
         for (course of selectedCourses) {
             let newRow = table.insertRow();
 
+            //each row will contain a (shallow?) copy of the course, which will be passed to its onclick
+            newRow.course = course;
+
             newRow.onclick = function () {
-                selectCourse(course);
+                selectCourse(this.course);
             };
 
             newRow.innerHTML = '<td>' + course.CourseCode + '</td><td>' + course.Title + '</td><td>' + 'TODO' + '</td>';
