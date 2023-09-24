@@ -63,9 +63,9 @@
 .course-result-container {
     max-height: 490px;
     overflow-y: scroll;
-    background: #E5EDF1;
-    border: 2px solid #a3c4e2;
-    border-radius: 2px;
+    /*background: #E5EDF1;*/
+    /*border: 2px solid #a3c4e2;*/
+    /*border-radius: 2px;*/
 }
 
 .program-courselist-wrapper {
