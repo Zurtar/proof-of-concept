@@ -1,8 +1,10 @@
 :root {
-  --wf-basewhite: rgba(255, 255, 255, 1);
+  --wf-basewhite: #E5EDF1;
+  /*--wf-basewhite: rgba(255, 255, 255, 1);*/
   --wf-base800: rgba(45, 54, 72, 1);
   --wf-base900: rgba(26, 32, 44, 1);
   --wf-base400: rgba(203, 210, 224, 1);
+
   /*--WF-buttons-button-medium-font-family: "Inter-Bold", Helvetica;*/
   --WF-buttons-button-medium-font-family: "Comforta";
   --WF-buttons-button-medium-font-weight: 700;
@@ -34,7 +36,8 @@
   --top-level-font: "Comfortaa";
 
   --darker-background-color: #224870;
-  --lighter-background-color: #8499B1;
+  --lighter-background-color: #c3d2e5c4;
+  /*--lighter-background-color: #8499B1;*/
   /*--lighter-background-color: #E5EDF1;*/
   /*--lighter-background-color: #00A7E1;*/
 }
