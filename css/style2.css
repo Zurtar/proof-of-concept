@@ -1,28 +1,15 @@
 
-
 /*Custom CSS*/
 .input-table td {
     padding: 0px 10px 0px;
     vertical-align: top;
 }
 
-/*.input-table {*/
-/*    table-layout: auto;*/
-/*    position: absolute;*/
-/*    margin-top: 110px;*/
-/*    left: 40px;*/
-/*    background: #E5EDF1;*/
-/*    border-bottom-width: 2px;*/
-/*    border-style: solid;*/
-/*    border-radius: 4px;*/
-/*    border-color: var(--wf-base800);*/
-/*    margin-right: 25px;*/
-/*}*/
 
 .input-table {
     table-layout: auto;
     position: relative;
-    background: #E5EDF1;
+    background: var(--lighter-background-color);
     border-bottom-width: 2px;
     border-style: solid;
     border-radius: 4px;
@@ -38,7 +25,8 @@
     position: relative;
     flex: 1;
     margin-top: -2px;
-    font-family: var(--WF-body-body-medium-font-family);
+    /*font-family: var(--WF-body-body-medium-font-family);*/
+    font-family: var(--top-level-font);
     font-weight: var(--WF-body-body-medium-font-weight);
     color: var(--wf-base800);
     font-size: var(--WF-body-body-medium-font-size);
@@ -80,18 +68,18 @@
     border-color: var(--wf-base400);
     align-self: stretch;
     width: 100%;
-    background: beige;
+    background: white;
 }
 
 .course-result-container {
     /*overflow-y: scroll;*/
-    /*background: #E5EDF1;*/
+    /*background: var(--lighter-background-color);*/
     /*border: 2px solid #a3c4e2;*/
     /*border-radius: 2px;*/
 }
 
 .program-courselist-wrapper {
-    background: #E5EDF1;
+    background: var(--lighter-background-color);
     /*border-bottom-width: 2px;*/
     /*border-style: solid;*/
     /*border-radius: 4px;*/
@@ -302,6 +290,8 @@
 .WF-utility-app {
     width: 100vw;
     height: 100vh;
+    background: var(--lighter-background-color);
+    font-family: var(--top-level-font);
 }
 
 .WF-utility-app .overlap-group {
@@ -353,7 +343,8 @@
     flex: 1;
     align-self: stretch;
     margin-top: -1px;
-    font-family: var(--WF-buttons-button-medium-font-family);
+    /*font-family: var(--WF-buttons-button-medium-font-family);*/
+    font-family: var(--top-level-font);
     font-weight: var(--WF-buttons-button-medium-font-weight);
     color: var(--wf-basewhite);
     font-size: var(--WF-buttons-button-medium-font-size);
@@ -380,16 +371,16 @@
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-color: var(--wf-base800);
-    background: #E5EDF1;
+    background: var(--darker-background-color);
 }
 
 .WF-utility-app .scheduling-input {
     position: relative;
     flex: 1;
     align-self: center;
-    font-family: var(--WF-headings-heading-m-font-family);
+    font-family: 'Comfortaa';
     font-weight: var(--WF-headings-heading-m-font-weight);
-    color: #8b2a31;
+    color: white;
     font-size: var(--WF-headings-heading-m-font-size);
     letter-spacing: var(--WF-headings-heading-m-letter-spacing);
     line-height: var(--WF-headings-heading-m-line-height);
@@ -408,7 +399,7 @@
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-    background: #E5EDF1;
+    background: var(--darker-background-color);
 }
 
 
@@ -418,7 +409,7 @@
     width: 400px;
     align-items: flex-start;
     gap: 24px;
-    background: #E5EDF1;
+    background: var(--lighter-background-color);
     /* position: relative; */
     /* top: 140px; */
     /* left: 40px; */
@@ -460,7 +451,7 @@
     position: relative;
     flex: 1;
     margin-top: -1px;
-    font-family: "Inter", Helvetica;
+    font-family: var(--top-level-font);
     font-weight: 600;
     color: var(--wf-base800);
     font-size: 19px;
@@ -520,7 +511,8 @@
     position: relative;
     flex: 1;
     margin-top: -1px;
-    font-family: var(--WF-body-body-medium-font-family);
+    /*font-family: var(--WF-body-body-medium-font-family);*/
+    font-family: var(--top-level-font);
     font-weight: var(--WF-body-body-medium-font-weight);
     color: var(--wf-base800);
     font-size: var(--WF-body-body-medium-font-size);
@@ -564,7 +556,8 @@
     position: relative;
     width: fit-content;
     margin-top: -1px;
-    font-family: var(--WF-buttons-button-large-font-family);
+    /*font-family: var(--WF-buttons-button-large-font-family);*/
+    font-family: var(--top-level-font);
     font-weight: var(--WF-buttons-button-large-font-weight);
     color: var(--wf-basewhite);
     font-size: var(--WF-buttons-button-large-font-size);
