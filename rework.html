@@ -133,7 +133,7 @@
             <td colspan="1">
             </td>
             <td>
-                <button class="next-btn" type="button">Next
+                <button class="next-btn" type="button" onclick="submitStudentData()">Next
                 </button>
             </td>
         </tr>
@@ -212,6 +212,15 @@
             //temp debug code to populate both lists too test searching functionality
             programCourseList = masterCourseList;
             electiveList = masterCourseList;
+
+
+            let storedSelectedCourses = localStorage.getItem("selectedCourses");
+            console.log(storedSelectedCourses);
+
+            if (storedSelectedCourses != null){
+                selectedCourses = JSON.parse(storedSelectedCourses);
+                updateSelectedCourseTable();
+            }
 
             console.log(masterCourseList);
         });
@@ -294,7 +303,7 @@
     }
 
     function updateSelectedCourseTable() {
-        var table = document.getElementById("selected_course_tbody");
+        let table = document.getElementById("selected_course_tbody");
 
         //clear table.
         table.innerHTML = "";
@@ -313,6 +322,12 @@
 
             newRow.innerHTML = '<td>' + course.CourseCode + '</td><td>' + course.Title + '</td><td>' + 'TODO' + '</td>';
         }
+
+        localStorage.setItem("selectedCourses", JSON.stringify(selectedCourses));
+    }
+
+    function submitStudentData() {
+
     }
 
 </script>
