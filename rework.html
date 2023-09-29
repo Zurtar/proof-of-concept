@@ -214,7 +214,7 @@
             electiveList = masterCourseList;
 
 
-            let storedSelectedCourses = localStorage.getItem("selectedCourses");
+            let storedSelectedCourses = window.localStorage.getItem("selectedCourses");
             console.log(storedSelectedCourses);
 
             if (storedSelectedCourses != null){
@@ -323,11 +323,10 @@
             newRow.innerHTML = '<td>' + course.CourseCode + '</td><td>' + course.Title + '</td><td>' + 'TODO' + '</td>';
         }
 
-        localStorage.setItem("selectedCourses", JSON.stringify(selectedCourses));
+        window.localStorage.setItem("selectedCourses", JSON.stringify(selectedCourses));
     }
 
     function submitStudentData() {
-
     }
 
 </script>
