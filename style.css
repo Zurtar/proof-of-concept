@@ -1,5 +1,5 @@
 .desktop {
-  background-color: #FFFFFF	;
+  background-color: #E5EDF1	;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,7 +7,7 @@
 }
 
 .desktop .WF-utility-app-wrapper {
-  background-color: #FFFFFF ;
+  background-color: #E5EDF1;
   overflow-x: hidden;
   width: 100vw;
   height: 100vw;
@@ -129,21 +129,6 @@
   border-color: var(--wf-base800);
 }
 
-.desktop .course-list {
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  height: 11.69px;
-  margin-bottom: -19.16px;
-}
-
-.desktop .overlap {
-  position: absolute;
-  width: 1676px;
-  height: 201px;
-  top: 0;
-  left: -6px;
-}
 
 .desktop .WF-header {
   display: flex;
@@ -153,13 +138,13 @@
   position: absolute;
   top: 0;
   left: 6px;
-  background-color:#E5EDF1 ;
+  background-color:#224870 ;
   overflow: hidden;
 }
 
 .desktop .padding {
   display: flex;
-  width: 222px;
+  width: 300px;
   height: 109px;
   align-items: flex-start;
   justify-content: space-around;
@@ -170,15 +155,15 @@
 
 .desktop .WF-logo-placeholder {
   display: flex;
-  width: 183px;
+  width: 300px;
   height: 48px;
   align-items: flex-start;
   gap: 10px;
-  padding: 12px 40px;
+  padding: 12px 20px;
   position: relative;
   margin-left: -20.5px;
   margin-right: -20.5px;
-  background-color: 	#4682b4 ;
+  background-color:#224870;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -187,53 +172,18 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Trebuchet MS", SansSerif;
+  font-family: "Comfortaa", SansSerif;
   font-weight: var(--WF-buttons-button-medium-font-weight);
   color: var(--wf-basewhite);
-  font-size: var(--WF-buttons-button-medium-font-size);
+  font-size: 30px;
   letter-spacing: var(--WF-buttons-button-medium-letter-spacing);
   line-height: var(--WF-buttons-button-medium-line-height);
   white-space: nowrap;
-  font-style: var(--WF-buttons-button-medium-font-style);
+  font-style: italic;
 }
 
-.desktop .divider {
-  position: relative;
-  width: 1988px;
-  height: 2px;
-  margin-right: -338px;
-  background-color: var(--wf-base900);
-  transform: rotate(0.09deg);
-}
 
-.desktop .div-wrapper {
-  display: flex;
-  width: 1676px;
-  height: 90px;
-  align-items: flex-start;
-  padding: 20px 30px;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: var(--wf-base800);
-}
 
-.desktop .text-wrapper-2 {
-  position: relative;
-  width: 100px;
-  height: 35px;
-  margin-top: -2px;
-  margin-bottom: -7px;
-  font-family: "Trebuchet MS", SansSerif;
-  font-weight: 700;
-  color: var(--wf-base800);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 31.2px;
-  white-space: nowrap;
-}
 
 .desktop .vector {
   position: absolute;
@@ -243,7 +193,7 @@
   left: 1555px;
 }
 
-.desktop .form {
+.desktop .inputCourseBackground {
   display: flex;
   flex-direction: column;
   width: 498px;
@@ -256,8 +206,8 @@
   left: 1029px;
   border-radius: 4px;
   border: 2px solid;
-  border-color:  #E5EDF1 ;
-  background-color: #E5EDF1 ;
+  border-color: #a3c4e2 ;
+  background-color: #a3c4e2 ;
 }
 
 .desktop .WF-input-field {

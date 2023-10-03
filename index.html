@@ -4,13 +4,14 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
   </head>
   <body>
     <div class="desktop">
       <div class="WF-utility-app-wrapper">
-        <div class="WF-utility-app">
           <div class="scheduleCalender">
             <div class="overlap-schedule">
+
               <div class="courseList"></div>
               <div class="calendarPart">
                 <div class="rectangle"></div>
@@ -18,32 +19,31 @@
                 <div class="rectangle-2"></div>
                 <div class="rectangle-3"></div>
                 <div class="rectangle-4"></div>
-                <div class="rectangle-5"></div>
               </div>
               <div class="courseListTitle"><img class="course-list" src="img/course-list.png" /></div>
             </div>
           </div>
-          <div class="overlap">
+
             <div class="WF-header">
               <div class="padding">
                 <div class="WF-logo-placeholder"><div class="text-wrapper">MyScheduling</div></div>
               </div>
-              <div class="divider"></div>
             </div>
-            <div class="div-wrapper"><div class="text-wrapper-2">easy rescheduling, any time</div></div>
-            <img class="vector" src="img/QuickLULogo.png" />
-          </div>
-          <div class="form">
+            <img class="vector" src="img/QuickLULogoBakg.png" />
+
+          <div class="inputCourseBackground">
             <div class="WF-input-field">
               <div class="WF-input-field-2">
                 <div class="label-stack"><div class="label">Input Course Change</div></div>
-                <div class="text-input"></div>
+                <select id="classList" name = "classList" class="text-input"></select>
               </div>
             </div>
             <div class="core-course-option">
               <div class="WF-input-field-3">
                 <div class="label-stack"><div class="label">Available Time Slots</div></div>
+
                 <div class="text-input"><img class="img" src="img/vector-1.svg" /></div>
+
               </div>
               <div class="WF-option">
                 <div class="WF-list-options"><div class="text-wrapper-3">Value</div></div>
@@ -65,8 +65,52 @@
               <div class="WF-option-3"></div>
             </div>
           </div>
-        </div>
+
       </div>
     </div>
   </body>
+
+<script>
+
+  let teachersCourses = [];
+
+  init();
+
+  function init() {
+    loadJSON(function (response) {
+      // Parse JSON string into object
+      teachersCourses = JSON.parse(response).Courses;
+
+      console.log(teachersCourses);
+
+      courseSearchList();
+    });
+  }
+
+  function loadJSON(callback) {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'teachersClasses.json', true);
+    xobj.onreadystatechange = function () {
+      if (xobj.readyState == 4 && xobj.status == "200") {
+        callback(xobj.responseText);
+      }
+    };
+    xobj.send(null);
+  }
+
+  function courseSearchList() {
+    var list = document.getElementById("classList");
+    for (course of teachersCourses) {
+
+      list.innerHTML +=  '<option value="'+ course.Id + '">' + course.CourseCode + '</option>';
+
+
+    }
+
+  }
+
+
+</script>
+
 </html>

@@ -1,0 +1,201 @@
+{
+  "Courses": [
+    {
+      "Id": "10440",
+      "SubjectCode": "COMP",
+      "CourseCode": "COMP-1411",
+      "Title": "Computer Programming I",
+      "Description": "A first course in programming given in C - mathematical problem solving, program development, C grammar and simple system functions. Students will develop and write their own programs and run them in a time-sharing environment.\r\n\r\nStudents may not take both Computer Science 0411 and 1411 for credit.",
+      "CourseRequisites": [
+        {
+          "DisplayText": "COMP 1411L needs to be registered at the same time.",
+          "DisplayTextExtension": "- Must be taken either prior to or at the same time as this course.",
+          "RequisiteId": "7056",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        }
+      ],
+      "Requisites": [
+        {
+          "RequirementCode": "7056",
+          "IsRequired": true,
+          "CompletionOrder": 2,
+          "CorequisiteCourseId": null,
+          "IsProtected": false
+        }
+      ]
+    },
+    {
+      "Id": "10441",
+      "SubjectCode": "COMP",
+      "CourseCode": "COMP-1431",
+      "Title": "Computer Programming II",
+      "Description": "Substantially extends the programming skills development, with more complex programs, using advanced C and C++ features. Good programming style and documentation are stressed throughout. Advanced data types, program structures and other advanced topics in C and C++ languages are discussed.",
+      "CourseRequisites": [
+        {
+          "DisplayText": "Requisite with no print text exists",
+          "DisplayTextExtension": "- Must be completed prior to taking this course.",
+          "RequisiteId": "3502",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        },
+        {
+          "DisplayText": "COMP 1431L needs to be registered for at the same time",
+          "DisplayTextExtension": "- Must be taken at the same time as this course.",
+          "RequisiteId": "3503",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        }
+      ],
+      "Requisites": [
+        {
+          "RequirementCode": "3502",
+          "IsRequired": true,
+          "CompletionOrder": 1,
+          "CorequisiteCourseId": null,
+          "IsProtected": true
+        },
+        {
+          "RequirementCode": "3503",
+          "IsRequired": true,
+          "CompletionOrder": 0,
+          "CorequisiteCourseId": null,
+          "IsProtected": false
+        }
+      ]
+    },{
+      "Id": "17626",
+      "SubjectCode": "COMP",
+      "CourseCode": "COMP-4111",
+      "Title": "Clinical Decision Support",
+      "Description": "An overview of computer-based Clinical Decision Support (CDS) and CDS Systems (CDSS). Topics include: the design principles behind clinical decision support systems, CDSS usability, implementation science, mathematical foundations of the knowledge-based systems and pattern recognition systems, clinical vocabularies, legal and ethical issues, patient centered systems, and applications of clinical decision support systems.\r\n\r\n Students who have previous credit in Computer Science 4210 with topic title \"Clinical Decision Support\" may not take Computer Science 4111 for credit.",
+      "CourseRequisites": [
+        {
+          "DisplayText": "Computer Science 2412 needs to be completed to take this course",
+          "DisplayTextExtension": "- Must be completed prior to taking this course.",
+          "RequisiteId": "5421",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        }
+      ],
+      "Requisites": [
+        {
+          "RequirementCode": "5421",
+          "IsRequired": true,
+          "CompletionOrder": 1,
+          "CorequisiteCourseId": null,
+          "IsProtected": true
+        }
+      ]
+    },{
+      "Id": "10460",
+      "SubjectCode": "COMP",
+      "CourseCode": "COMP-4411",
+      "Title": "Programming Languages",
+      "Description": "The basic elements of programming languages and programming paradigms are explored. A kernel language approach based on Mozart OZ is used to teach programming that situtates most of the widely-known programming paradigms (including imperative, object-oriented, concurrent, logic, and functional) in a uniform setting that shows their deep relationships and how to use them together. The kernel approach is compared to the approaches used by variety of dedicated languages (e.g. SALSA, ProfessorJ, ML, CLOS, Prolog).",
+      "CourseRequisites": [
+        {
+          "DisplayText": "Requisite with no print text exists",
+          "DisplayTextExtension": "- Must be completed prior to taking this course.",
+          "RequisiteId": "3623",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        }
+      ],
+      "Requisites": [
+        {
+          "RequirementCode": "3623",
+          "IsRequired": true,
+          "CompletionOrder": 1,
+          "CorequisiteCourseId": null,
+          "IsProtected": true
+        }
+      ]
+    },{
+      "Id": "6822",
+      "SubjectCode": "ECON",
+      "CourseCode": "ECON-3117",
+      "Title": "Mathematical Economics I",
+      "Description": "The nature of mathematical economics. Linear economic models. Comparative statics. Optimization: a special variety of equilibrium analysis. Lagrange multipliers. Shadow prices.",
+      "CourseRequisites": [
+        {
+          "DisplayText": "Requisite with no print text exists",
+          "DisplayTextExtension": "- Must be completed prior to taking this course.",
+          "RequisiteId": "2383",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        },
+        {
+          "DisplayText": "ECON 3117L needs to be registered for at the same time",
+          "DisplayTextExtension": "- Must be taken at the same time as this course.",
+          "RequisiteId": "5626",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        }
+      ],
+      "Requisites": [
+        {
+          "RequirementCode": "2383",
+          "IsRequired": true,
+          "CompletionOrder": 1,
+          "CorequisiteCourseId": null,
+          "IsProtected": true
+        },
+        {
+          "RequirementCode": "5626",
+          "IsRequired": true,
+          "CompletionOrder": 0,
+          "CorequisiteCourseId": null,
+          "IsProtected": false
+        }
+      ]
+    },{
+      "Id": "15302",
+      "SubjectCode": "EDUC",
+      "CourseCode": "EDUC-3110",
+      "Title": "Mathematics Educ (Advanced)",
+      "Description": "An advanced course in elementary mathematics pedagogy and content, with a focus at the Junior level. Children's mathematical development will be explored, as well as models, strategies, and ideas developed in inquiry classrooms. Attention is given to mathematics relevant to an Indigenous context. \r\n\r\nRestricted to students in the HBEd (Aboriginal Education) program, except with special permission of the Chair of the Department of Aboriginal Education.",
+      "CourseRequisites": [
+        {
+          "DisplayText": "TAKE EDUC-2110",
+          "DisplayTextExtension": "- Must be completed prior to taking this course.",
+          "RequisiteId": "2732",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        }
+      ],
+      "Requisites": [
+        {
+          "RequirementCode": "2732",
+          "IsRequired": true,
+          "CompletionOrder": 1,
+          "CorequisiteCourseId": null,
+          "IsProtected": true
+        }
+      ]
+    },{
+      "Id": "14887",
+      "SubjectCode": "MATH",
+      "CourseCode": "MATH-1210",
+      "Title": "Calculus I for Engineers",
+      "Description": "Application of differentiation; definite and indefinite integrals; transcendental functions; complex numbers; techniques of integration.\r\n\r\nEngineering students may substitute Mathematics 1171 for Mathematics 1210, with permission of the Dean of the Faculty of Engineering. Students may only receive credit for one of Math 1151, Math 1171, or Math 1210.",
+      "CourseRequisites": [
+        {
+          "DisplayText": "MATH 1210L needs to be registered for at the same time",
+          "DisplayTextExtension": "- Must be taken at the same time as this course.",
+          "RequisiteId": "1978",
+          "IsRequired": true,
+          "ReferencesInvalidCourseOrSection": false
+        }
+      ],
+      "Requisites": [
+        {
+          "RequirementCode": "1978",
+          "IsRequired": true,
+          "CompletionOrder": 0,
+          "CorequisiteCourseId": null,
+          "IsProtected": false
+        }
+      ]
+    }]
+}
