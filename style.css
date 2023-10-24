@@ -431,10 +431,6 @@
   font-family: Arial,Helvetica,sans-serif;
   border-collapse: collapse;
   /*width: 100%*/
-  left: 30px;
-  top: 135px;
-  height: 50%;
-  position: absolute;
 }
 
 .XWBP-Table td,.XWBP-Table th {
@@ -451,5 +447,13 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left
+}
+
+.schedule-wrapper {
+  height: 62vh;
+  overflow: scroll;
+  width: min-content;
+  margin-left: 30px;
+  margin-top: 135px;
 }
 
