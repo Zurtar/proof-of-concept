@@ -450,6 +450,16 @@
 }
 
 .schedule-wrapper {
+  table-layout: auto;
+  position: relative;
+  background: var(--lighter-background-color);
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: var(--wf-base800);
+  margin: auto;
+  padding-top: 10px;
+
   height: 62vh;
   overflow: scroll;
   width: min-content;
