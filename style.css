@@ -137,7 +137,6 @@
   align-items: flex-start;
   position: absolute;
   top: 0;
-  left: 6px;
   background-color:#224870 ;
   overflow: hidden;
 }
@@ -365,3 +364,92 @@
   width: 100%;
   flex: 0 0 auto;
 }
+
+
+/*just absolutely ripped from lu */
+@media screen {
+  #content .ludHLWarning, table.ludTableGrid td.ludHLWarning {background:#FFFFAA; border:2px double #FF0000; font-style:italic;}
+}
+
+@media print {
+  #content table.ludTableGrid {width:100%; empty-cells:show; font-size:.85em; }
+  #content table.ludTableGrid td {border:1px solid #F0F0F0; background:#FDFDFD; padding:4px; min-width:100%; width:auto; text-align:center;}
+  #content table.ludTableGrid td.currency {border:1px solid #F0F0F0; background:#FDFDFD; padding:4px; min-width:100%; width:auto; text-align:right;}
+  #content table.ludTableGrid td.ludLabel {background:#F0F0F0; color:#000;font-weight:bold; text-align:left;}
+  #content table.ludTableGrid th {border:none; background:#002485; color:#FFF; padding:4px; text-transform:uppercase;}
+  #content table.ludTableGrid hr {margin:0; padding:0; display:none;}
+  #content table {font-family:Arial;}
+  #content table th {border:none; color:#000; padding:4px; text-transform:uppercase; text-align:center;}
+  #content table td {width:auto; text-align:left; border:none;}
+  #content table td.ludLabel {color:#000;font-weight:bold; text-align:left;}
+  #content table.ludTableGridDark {border-collapse: collapse;border:1px solid #AAA;}
+  #content table.ludTableGridDark td, th{border:1px solid #000;}
+  #content table.ludTableGridLight {border-collapse: collapse;border:1px solid #AAA;}
+  #content table.ludTableGridLight td, th{border:1px dotted #AAA;}
+  #content .ludHLNormal, table.ludTableGrid td.ludHLNormal {background:#E0E0FF !important; border:1px solid #AAA;}
+  #content .ludHLError, table.ludTableGrid td.ludHLError {background:#FFAAAA; border:2px double #FF0000; font-style:italic;}
+  #content .ludHLWarning, table.ludTableGrid td.ludHLWarning {background:#FFFFAA; border:2px double #FF0000; font-style:italic;}
+  #content .ludHLSpecial, table.ludTableGrid td.ludHLSpecial {background:#CCFFDD;}
+}
+
+.XWBP-Wrapper {
+  padding: 30px
+}
+
+.XWBP-Link-List {
+  padding: 10px;
+  border-left: 2px solid #eaeaea
+}
+
+.XWBP-Link-List:hover {
+  border-left: 2px solid #c8c8c8
+}
+
+.XWBP-Link-List a {
+  color: #232323;
+  text-decoration: none;
+  padding: 10px
+}
+
+.XWBP-Link-List a:hover {
+  text-decoration: underline;
+  color: #242424!important
+}
+
+.XWBP-Label {
+  box-sizing: unset;
+  bottom: .625rem;
+  padding-right: 1.25rem!important
+}
+
+.XWBP-Ellucian-Label-Overwrite {
+  left: .25rem!important;
+  margin-left: 29px!important
+}
+
+.XWBP-Table {
+  font-family: Arial,Helvetica,sans-serif;
+  border-collapse: collapse;
+  /*width: 100%*/
+  left: 30px;
+  top: 135px;
+  height: 50%;
+  position: absolute;
+}
+
+.XWBP-Table td,.XWBP-Table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left
+}
+
+.XWBP-Table tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.XWBP-Table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left
+}
+
