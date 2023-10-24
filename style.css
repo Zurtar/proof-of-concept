@@ -449,6 +449,11 @@
   text-align: left
 }
 
+.XWBP-Table thead th {
+  top: 0;
+  position: sticky;
+}
+
 .schedule-wrapper {
   table-layout: auto;
   position: relative;
