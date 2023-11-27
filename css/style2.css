@@ -1,0 +1,752 @@
+
+/*Custom CSS*/
+.input-table td {
+    padding: 0px 10px 0px;
+    vertical-align: top;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    z-index: 1;
+    /*background: url("img/LoadingImage.gif") repeat;*/
+}
+
+.schedule-submitted {
+    left: -140px;
+    position: relative;
+    font-size: 24px;
+    font-family: --top-level-font;
+}
+
+/**
+ * ==============================================
+ * Dot Spin
+ * ==============================================
+ */
+.dot-spin {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: transparent;
+    box-shadow: 0 -18px 0 0 #9880ff, 12.727926px -12.727926px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.727926px 12.727926px 0 0 rgba(152, 128, 255, 0), 0 18px 0 0 rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 0 rgba(152, 128, 255, 0), -18px 0 0 0 rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 0 rgba(152, 128, 255, 0);
+    animation: dot-spin 1.5s infinite linear;
+}
+
+@keyframes dot-spin {
+    0%, 100% {
+        box-shadow: 0 -18px 0 0 #9880ff, 12.727926px -12.727926px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    12.5% {
+        box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.727926px 12.727926px 0 0 #9880ff, 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    25% {
+        box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 0 #9880ff, 12.727926px 12.727926px 0 0 #9880ff, 0 18px 0 0 #9880ff, -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    37.5% {
+        box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 0 #9880ff, 0 18px 0 0 #9880ff, -12.727926px 12.727926px 0 0 #9880ff, -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    50% {
+        box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 0 #9880ff, -12.727926px 12.727926px 0 0 #9880ff, -18px 0 0 0 #9880ff, -12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0);
+    }
+    62.5% {
+        box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 0 #9880ff, -18px 0 0 0 #9880ff, -12.727926px -12.727926px 0 0 #9880ff;
+    }
+    75% {
+        box-shadow: 0 -18px 0 0 #9880ff, 12.727926px -12.727926px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 0 #9880ff, -12.727926px -12.727926px 0 0 #9880ff;
+    }
+    87.5% {
+        box-shadow: 0 -18px 0 0 #9880ff, 12.727926px -12.727926px 0 0 #9880ff, 18px 0 0 -5px rgba(152, 128, 255, 0), 12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.727926px 12.727926px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.727926px -12.727926px 0 0 #9880ff;
+    }
+}
+/*Dot elastic start*/
+@keyframes dot-elastic-before {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1.5);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes dot-elastic {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 1.5);
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes dot-elastic-after {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+/*Dot elastic end*/
+
+.input-table {
+    table-layout: auto;
+    position: relative;
+    background: var(--lighter-background-color);
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: var(--wf-base800);
+    margin: auto;
+    top: 105px;
+    padding-top: 10px;
+}
+
+
+
+.text-wrapper-2 {
+    position: relative;
+    flex: 1;
+    margin-top: -2px;
+    /*font-family: var(--WF-body-body-medium-font-family);*/
+    font-family: var(--top-level-font);
+    font-weight: var(--WF-body-body-medium-font-weight);
+    color: var(--wf-base800);
+    font-size: var(--WF-body-body-medium-font-size);
+    letter-spacing: var(--WF-body-body-medium-letter-spacing);
+    line-height: var(--WF-body-body-medium-line-height);
+    font-style: var(--WF-body-body-medium-font-style);
+}
+
+.course-result:hover {
+    background-color: lightgreen;
+}
+
+
+/*wrapper for core-course results*/
+.core-course-option {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    top: -18px;
+
+    /*this makes it keep its look when we resize*/
+    max-height: 62vh;
+    overflow-y: auto;
+}
+
+.course-result {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 12px 12px 12px 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    border-radius: 6px;
+    border: 2px solid;
+    border-color: var(--wf-base400);
+    align-self: stretch;
+    width: 100%;
+    background: white;
+}
+
+.course-result-container {
+    /*overflow-y: scroll;*/
+    /*background: var(--lighter-background-color);*/
+    /*border: 2px solid #a3c4e2;*/
+    /*border-radius: 2px;*/
+}
+
+.program-courselist-wrapper {
+    background: var(--lighter-background-color);
+    /*border-bottom-width: 2px;*/
+    /*border-style: solid;*/
+    /*border-radius: 4px;*/
+    border-right: dashed;
+    border-color: var(--wf-base800);
+    height: 75vh;
+}
+
+.selected-course-table-container {
+    overflow-y: scroll;
+    height: auto;
+}
+
+/*not sure why the webkit error*/
+.course-list-table {
+    width: -webkit-fill-available;
+}
+
+.course-list-table td, .course-list-table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    width: max-content;
+}
+
+#selected_course_tbody {
+    background: #a3c4e2;
+
+}
+
+/*hasn't been changed yet, just renamed*/
+.course-search-input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: 32px;
+    padding-top: 5px;
+}
+
+.image-upload {
+    padding: 10px 42px 0px;
+}
+
+.upload-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #00000040;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+
+
+/*image upload import*/
+
+.file-upload {
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.next-btn {
+    width: 100%;
+    color: #fff;
+    background: darkgreen;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--top-level-font);
+}
+
+.file-upload-btn {
+    width: 100%;
+    color: #fff;
+    background: #2d3648;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--top-level-font);
+}
+
+.file-upload-btn:hover {
+    background: #2d3648;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    margin-top: 20px;
+    border: 4px dashed #2d3648;
+    position: relative;
+}
+
+/*.image-dropping,*/
+/*.image-upload-wrap:hover {*/
+/*    background-color: #20c997;*/
+/*    border: 4px dashed #ffffff;*/
+/*}*/
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #2d3648;
+    padding: 60px 0;
+}
+
+.file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+/*Everything below this is imported from figma and is a bit broken!*/
+
+/* width */
+
+.input-table ::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.input-table ::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grey;*/
+    border-radius: 10px;
+}
+
+/* Handle */
+
+.input-table ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+.WF-utility-app {
+    width: 100vw;
+    height: 100vh;
+    background: var(--lighter-background-color);
+    font-family: var(--top-level-font);
+}
+
+.blured-div {
+    filter: blur(2px);
+}
+
+.WF-utility-app .overlap-group {
+    position: absolute;
+    width: 100vw;
+    height: 254px;
+    top: 0;
+    left: 0;
+}
+
+.WF-utility-app .WF-header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 153px;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--wf-basewhite);
+}
+
+.WF-utility-app .padding {
+    display: flex;
+    width: 321px;
+    height: 139px;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 530px;
+    padding: 24px 40px;
+    position: relative;
+}
+
+.WF-utility-app .WF-logo-placeholder {
+    display: flex;
+    width: 230px;
+    height: 63px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 40px;
+    position: relative;
+    background-color: var(--wf-base800);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.WF-utility-app .text-wrapper {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    /*font-family: var(--WF-buttons-button-medium-font-family);*/
+    font-family: var(--top-level-font);
+    font-weight: var(--WF-buttons-button-medium-font-weight);
+    color: var(--wf-basewhite);
+    font-size: var(--WF-buttons-button-medium-font-size);
+    text-align: center;
+    letter-spacing: var(--WF-buttons-button-medium-letter-spacing);
+    line-height: var(--WF-buttons-button-medium-line-height);
+    font-style: var(--WF-buttons-button-medium-font-style);
+}
+
+.WF-utility-app .divider {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 5px;
+    background-color: var(--wf-base900);
+}
+
+.WF-utility-app .WF-title-bar {
+    display: flex;
+    width: 100vw;
+    align-items: flex-start;
+    padding-left: 10px;
+    position: absolute;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: var(--wf-base800);
+    background: var(--darker-background-color);
+}
+
+.WF-utility-app .scheduling-input {
+    position: relative;
+    flex: 1;
+    align-self: center;
+    font-family: 'Comfortaa';
+    font-weight: var(--WF-headings-heading-m-font-weight);
+    color: white;
+    font-size: var(--WF-headings-heading-m-font-size);
+    letter-spacing: var(--WF-headings-heading-m-letter-spacing);
+    line-height: var(--WF-headings-heading-m-line-height);
+    font-style: italic;
+}
+
+.WF-utility-app .button-stack {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+
+.WF-utility-app .logo {
+    width: 88px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    background: var(--darker-background-color);
+}
+
+
+.WF-utility-app .form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: flex-start;
+    gap: 24px;
+    background: var(--lighter-background-color);
+    /* position: relative; */
+    /* top: 140px; */
+    /* left: 40px; */
+}
+
+.WF-utility-app .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.WF-utility-app .WF-input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.WF-utility-app .label-stack {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.WF-utility-app .label {
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    font-family: var(--top-level-font);
+    font-weight: 600;
+    color: var(--wf-base800);
+    font-size: 19px;
+    letter-spacing: -0.14px;
+    line-height: 16px;
+}
+
+.WF-utility-app .text-input {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 48px;
+    background-color: var(--wf-basewhite);
+    border-radius: 6px;
+    border: 2px solid;
+    border-color: var(--wf-base400);
+    font-family: var(--top-level-font);
+}
+
+.WF-utility-app .drop-down-base {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.WF-utility-app .div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--wf-basewhite);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: var(--wf-base400);
+}
+
+.WF-utility-app .label-2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 12px 12px 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.WF-utility-app .value {
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    /*font-family: var(--WF-body-body-medium-font-family);*/
+    font-family: var(--top-level-font);
+    font-weight: var(--WF-body-body-medium-font-weight);
+    color: var(--wf-base800);
+    font-size: var(--WF-body-body-medium-font-size);
+    letter-spacing: var(--WF-body-body-medium-letter-spacing);
+    line-height: var(--WF-body-body-medium-line-height);
+    font-style: var(--WF-body-body-medium-font-style);
+}
+
+.WF-utility-app .icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.WF-utility-app .WF-button-large {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+    all: unset;
+    box-sizing: border-box;
+}
+
+.WF-utility-app .WF-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 24px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--wf-base800);
+    border-radius: 6px;
+    overflow: hidden;
+    all: unset;
+    box-sizing: border-box;
+}
+
+.WF-utility-app .label-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    /*font-family: var(--WF-buttons-button-large-font-family);*/
+    font-family: var(--top-level-font);
+    font-weight: var(--WF-buttons-button-large-font-weight);
+    color: var(--wf-basewhite);
+    font-size: var(--WF-buttons-button-large-font-size);
+    letter-spacing: var(--WF-buttons-button-large-letter-spacing);
+    line-height: var(--WF-buttons-button-large-line-height);
+    white-space: nowrap;
+    font-style: var(--WF-buttons-button-large-font-style);
+}
+
+
+.WF-utility-app .WF-input-field-2 {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.WF-utility-app .img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    left: 284px;
+}
+
+.WF-utility-app .WF-option {
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.WF-utility-app .WF-list-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 12px 12px 12px 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    background-color: var(--wf-basewhite);
+    border-radius: 6px;
+    border: 2px solid;
+    border-color: var(--wf-base400);
+}
+
+.WF-utility-app .upload-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 483px;
+    left: 1355px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+.WF-utility-app .WF-button-2 {
+    position: absolute;
+    width: 203px;
+    height: 64px;
+    top: 768px;
+    left: 1351px;
+}
