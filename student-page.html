@@ -18,6 +18,9 @@
 <body>
 <div hidden="hidden" id="overlay-div" class="overlay">
     <div class="dot-spin"></div>
+    <div class="schedule-submitted" hidden="hidden">
+        Schedule Submitted, Thank you.
+    </div>
 </div>
 <div class="WF-utility-app" id="top-level-container">
         <header>
@@ -347,7 +350,7 @@
 
     function submitStudentData() {
         // ill need to combine the css of the two pages so for now they get this
-        window.location.href = "https://eelslap.com/";
+        // window.location.href = "teacher-page.html";
 
     }
 
@@ -360,14 +363,18 @@
 
         // show loading bar and blue everything else
         document.getElementById("overlay-div").hidden = false;
+        document.getElementsByClassName("dot-spin")[0].hidden = false;
         document.getElementById("top-level-container").classList.add("blured-div");
 
         // Fake loading screen
         delay(1000).then(() => {
 
             // hide loading, unblur as it persists if they hit the back button
-            document.getElementById("overlay-div").hidden = true;
-            document.getElementById("top-level-container").classList.remove("blured-div");
+            // document.getElementById("overlay-div").hidden = false;
+            document.getElementsByClassName("dot-spin")[0].hidden = true;
+            document.getElementsByClassName("schedule-submitted")[0].hidden = false;
+
+            // document.getElementById("top-level-container").classList.remove("blured-div");
             submitStudentData();
         });
     }

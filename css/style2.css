@@ -15,6 +15,13 @@
     /*background: url("img/LoadingImage.gif") repeat;*/
 }
 
+.schedule-submitted {
+    left: -140px;
+    position: relative;
+    font-size: 24px;
+    font-family: --top-level-font;
+}
+
 /**
  * ==============================================
  * Dot Spin
