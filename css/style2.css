@@ -22,6 +22,30 @@
     font-family: --top-level-font;
 }
 
+.parent-table-splash {
+    position: absolute;
+    top: 25%;
+    left: 48%;
+}
+
+.demo-button {
+    margin: auto;
+    width: 50%;
+
+    position: relative;
+    /* float: right; */
+    color: #fff;
+    background: darkgreen;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--top-level-font);
+}
+
 /**
  * ==============================================
  * Dot Spin
