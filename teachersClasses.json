@@ -24,14 +24,38 @@
           "IsProtected": false
         }
       ],
-      "PossibleTimeSlots:": [
+      "PossibleTimeSlots": [
         {
-          "TimeSlotString": "",
-          "StudentCount": 0,
-          "StudentsWithoutConflict": 0,
-          "StudentsWithConflict": 0,
-          "RequiredCourseStudents": 0,
-          "ElectiveCourseStudents": 0
+          "TimeSlotString": "T TH 12:30 - 2pm",
+          "StudentCount": 24,
+          "StudentsWithoutConflict": 12,
+          "StudentsWithConflict": 12,
+          "RequiredCourseStudents": 20,
+          "ElectiveCourseStudents": 4
+        },
+        {
+          "TimeSlotString": "TH 9-12pm",
+          "StudentCount": 24,
+          "StudentsWithoutConflict": 23,
+          "StudentsWithConflict": 1,
+          "RequiredCourseStudents": 20,
+          "ElectiveCourseStudents": 4
+        },
+        {
+          "TimeSlotString": "M, W, F  4-5pm",
+          "StudentCount": 24,
+          "StudentsWithoutConflict": 15,
+          "StudentsWithConflict": 9,
+          "RequiredCourseStudents": 20,
+          "ElectiveCourseStudents": 4
+        },
+        {
+          "TimeSlotString": "M, W  12-1:30pm",
+          "StudentCount": 24,
+          "StudentsWithoutConflict": 4,
+          "StudentsWithConflict": 20,
+          "RequiredCourseStudents": 20,
+          "ElectiveCourseStudents": 4
         }
       ]
     },
@@ -73,14 +97,38 @@
           "IsProtected": false
         }
       ],
-      "PossibleTimeSlots:": [
+      "PossibleTimeSlots": [
         {
-          "TimeSlotString": "",
-          "StudentCount": 0,
-          "StudentsWithoutConflict": 0,
-          "StudentsWithConflict": 0,
-          "RequiredCourseStudents": 0,
-          "ElectiveCourseStudents": 0
+          "TimeSlotString": "T, Th  8:30am - 10am",
+          "StudentCount": 30,
+          "StudentsWithoutConflict": 17,
+          "StudentsWithConflict": 7,
+          "RequiredCourseStudents": 17,
+          "ElectiveCourseStudents": 13
+        },
+        {
+          "TimeSlotString": "Wed 12-3pm",
+          "StudentCount": 30,
+          "StudentsWithoutConflict": 1,
+          "StudentsWithConflict": 23,
+          "RequiredCourseStudents": 17,
+          "ElectiveCourseStudents": 13
+        },
+        {
+          "TimeSlotString": "Mon Wed Fri  6-7pm",
+          "StudentCount": 30,
+          "StudentsWithoutConflict": 10,
+          "StudentsWithConflict": 12,
+          "RequiredCourseStudents": 17,
+          "ElectiveCourseStudents": 13
+        },
+        {
+          "TimeSlotString": "Fri  7-10pm",
+          "StudentCount": 30,
+          "StudentsWithoutConflict": 18,
+          "StudentsWithConflict": 6,
+          "RequiredCourseStudents": 17,
+          "ElectiveCourseStudents": 13
         }
       ]
     },
@@ -108,158 +156,38 @@
           "IsProtected": true
         }
       ],
-      "PossibleTimeSlots:": [
+      "PossibleTimeSlots": [
         {
-          "TimeSlotString": "",
-          "StudentCount": 0,
-          "StudentsWithoutConflict": 0,
-          "StudentsWithConflict": 0,
-          "RequiredCourseStudents": 0,
-          "ElectiveCourseStudents": 0
-        }
-      ]
-    },
-    {
-      "Id": "10460",
-      "SubjectCode": "COMP",
-      "CourseCode": "COMP-4411",
-      "Title": "Programming Languages",
-      "Description": "The basic elements of programming languages and programming paradigms are explored. A kernel language approach based on Mozart OZ is used to teach programming that situtates most of the widely-known programming paradigms (including imperative, object-oriented, concurrent, logic, and functional) in a uniform setting that shows their deep relationships and how to use them together. The kernel approach is compared to the approaches used by variety of dedicated languages (e.g. SALSA, ProfessorJ, ML, CLOS, Prolog).",
-      "CourseRequisites": [
-        {
-          "DisplayText": "Requisite with no print text exists",
-          "DisplayTextExtension": "- Must be completed prior to taking this course.",
-          "RequisiteId": "3623",
-          "IsRequired": true,
-          "ReferencesInvalidCourseOrSection": false
-        }
-      ],
-      "Requisites": [
-        {
-          "RequirementCode": "3623",
-          "IsRequired": true,
-          "CompletionOrder": 1,
-          "CorequisiteCourseId": null,
-          "IsProtected": true
-        }
-      ]
-    },
-    {
-      "Id": "6822",
-      "SubjectCode": "ECON",
-      "CourseCode": "ECON-3117",
-      "Title": "Mathematical Economics I",
-      "Description": "The nature of mathematical economics. Linear economic models. Comparative statics. Optimization: a special variety of equilibrium analysis. Lagrange multipliers. Shadow prices.",
-      "CourseRequisites": [
-        {
-          "DisplayText": "Requisite with no print text exists",
-          "DisplayTextExtension": "- Must be completed prior to taking this course.",
-          "RequisiteId": "2383",
-          "IsRequired": true,
-          "ReferencesInvalidCourseOrSection": false
+          "TimeSlotString": "Tues  8:30-11:30am",
+          "StudentCount": 31,
+          "StudentsWithoutConflict": 25,
+          "StudentsWithConflict": 6,
+          "RequiredCourseStudents": 10,
+          "ElectiveCourseStudents": 21
         },
         {
-          "DisplayText": "ECON 3117L needs to be registered for at the same time",
-          "DisplayTextExtension": "- Must be taken at the same time as this course.",
-          "RequisiteId": "5626",
-          "IsRequired": true,
-          "ReferencesInvalidCourseOrSection": false
-        }
-      ],
-      "Requisites": [
-        {
-          "RequirementCode": "2383",
-          "IsRequired": true,
-          "CompletionOrder": 1,
-          "CorequisiteCourseId": null,
-          "IsProtected": true
+          "TimeSlotString": "T, Th  3:30 - 5pm",
+          "StudentCount": 31,
+          "StudentsWithoutConflict": 4,
+          "StudentsWithConflict": 27,
+          "RequiredCourseStudents": 10,
+          "ElectiveCourseStudents": 21
         },
         {
-          "RequirementCode": "5626",
-          "IsRequired": true,
-          "CompletionOrder": 0,
-          "CorequisiteCourseId": null,
-          "IsProtected": false
-        }
-      ],
-      "PossibleTimeSlots:": [
-        {
-          "TimeSlotString": "",
-          "StudentCount": 0,
-          "StudentsWithoutConflict": 0,
+          "TimeSlotString": "Mon, Wed  12- 1:30pm",
+          "StudentCount": 31,
+          "StudentsWithoutConflict": 31,
           "StudentsWithConflict": 0,
-          "RequiredCourseStudents": 0,
-          "ElectiveCourseStudents": 0
-        }
-      ]
-    },
-    {
-      "Id": "15302",
-      "SubjectCode": "EDUC",
-      "CourseCode": "EDUC-3110",
-      "Title": "Mathematics Educ (Advanced)",
-      "Description": "An advanced course in elementary mathematics pedagogy and content, with a focus at the Junior level. Children's mathematical development will be explored, as well as models, strategies, and ideas developed in inquiry classrooms. Attention is given to mathematics relevant to an Indigenous context. \r\n\r\nRestricted to students in the HBEd (Aboriginal Education) program, except with special permission of the Chair of the Department of Aboriginal Education.",
-      "CourseRequisites": [
+          "RequiredCourseStudents": 10,
+          "ElectiveCourseStudents": 21
+        },
         {
-          "DisplayText": "TAKE EDUC-2110",
-          "DisplayTextExtension": "- Must be completed prior to taking this course.",
-          "RequisiteId": "2732",
-          "IsRequired": true,
-          "ReferencesInvalidCourseOrSection": false
-        }
-      ],
-      "Requisites": [
-        {
-          "RequirementCode": "2732",
-          "IsRequired": true,
-          "CompletionOrder": 1,
-          "CorequisiteCourseId": null,
-          "IsProtected": true
-        }
-      ],
-      "PossibleTimeSlots:": [
-        {
-          "TimeSlotString": "",
-          "StudentCount": 0,
-          "StudentsWithoutConflict": 0,
-          "StudentsWithConflict": 0,
-          "RequiredCourseStudents": 0,
-          "ElectiveCourseStudents": 0
-        }
-      ]
-    },
-    {
-      "Id": "14887",
-      "SubjectCode": "MATH",
-      "CourseCode": "MATH-1210",
-      "Title": "Calculus I for Engineers",
-      "Description": "Application of differentiation; definite and indefinite integrals; transcendental functions; complex numbers; techniques of integration.\r\n\r\nEngineering students may substitute Mathematics 1171 for Mathematics 1210, with permission of the Dean of the Faculty of Engineering. Students may only receive credit for one of Math 1151, Math 1171, or Math 1210.",
-      "CourseRequisites": [
-        {
-          "DisplayText": "MATH 1210L needs to be registered for at the same time",
-          "DisplayTextExtension": "- Must be taken at the same time as this course.",
-          "RequisiteId": "1978",
-          "IsRequired": true,
-          "ReferencesInvalidCourseOrSection": false
-        }
-      ],
-      "Requisites": [
-        {
-          "RequirementCode": "1978",
-          "IsRequired": true,
-          "CompletionOrder": 0,
-          "CorequisiteCourseId": null,
-          "IsProtected": false
-        }
-      ],
-      "PossibleTimeSlots:": [
-        {
-          "TimeSlotString": "",
-          "StudentCount": 0,
-          "StudentsWithoutConflict": 0,
-          "StudentsWithConflict": 0,
-          "RequiredCourseStudents": 0,
-          "ElectiveCourseStudents": 0
+          "TimeSlotString": "Mon Wed Fri 8am - 9am",
+          "StudentCount": 31,
+          "StudentsWithoutConflict": 21,
+          "StudentsWithConflict": 10,
+          "RequiredCourseStudents": 10,
+          "ElectiveCourseStudents": 21
         }
       ]
     }

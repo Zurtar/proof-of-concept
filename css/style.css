@@ -1,31 +1,36 @@
-.desktop {
-    background-color: #E5EDF1	;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+{
+    background-color: #E5EDF1
+;
+    display: flex
+;
+    flex-direction: row
+;
+    justify-content: center
+;
+    width: 100%
+;
 }
 
-.desktop .WF-utility-app-wrapper {
+.WF-utility-app-wrapper {
     background-color: #E5EDF1;
     overflow-x: hidden;
     width: 100vw;
     height: 100vw;
 }
 
-.desktop .WF-utility-app {
+.WF-utility-app {
     position: relative;
     width: 100vw;
     height: 100vw;
     top: -4px;
     left: -4px;
-    background-color:  #FFFFFF ;
+    background-color: #FFFFFF;
     border-radius: 8px;
     border: 4px solid;
     border-color: var(--wf-base800);
 }
 
-.desktop .scheduleCalender {
+.scheduleCalender {
     position: absolute;
     width: 858px;
     height: 441px;
@@ -38,7 +43,7 @@
     border-color: var(--wf-base800);
 }
 
-.desktop .overlap-schedule {
+.overlap-schedule {
     position: relative;
     width: 4px;
     height: 642px;
@@ -46,16 +51,16 @@
     left: -65px;
 }
 
-.desktop .courseList {
+.courseList {
     position: absolute;
     width: 190px;
     height: 622px;
     top: 20px;
     left: 65px;
-    background-color:   #a3c4e2 ;
+    background-color: #a3c4e2;
 }
 
-.desktop .calendarPart {
+.calendarPart {
     display: flex;
     width: 872px;
     height: 622px;
@@ -67,7 +72,7 @@
     left: 242px;
 }
 
-.desktop .rectangle {
+.rectangle {
     width: 106px;
     position: relative;
     height: 834px;
@@ -75,7 +80,7 @@
     background-color: var(--greysgrey-8);
 }
 
-.desktop .div {
+.div {
     width: 108px;
     position: relative;
     height: 834px;
@@ -83,7 +88,7 @@
     background-color: var(--greysgrey-8);
 }
 
-.desktop .rectangle-2 {
+.rectangle-2 {
     width: 95px;
     position: relative;
     height: 834px;
@@ -91,7 +96,7 @@
     background-color: var(--greysgrey-8);
 }
 
-.desktop .rectangle-3 {
+.rectangle-3 {
     width: 91px;
     position: relative;
     height: 834px;
@@ -99,7 +104,7 @@
     background-color: var(--greysgrey-8);
 }
 
-.desktop .rectangle-4 {
+.rectangle-4 {
     width: 85px;
     position: relative;
     height: 834px;
@@ -107,7 +112,7 @@
     background-color: var(--greysgrey-8);
 }
 
-.desktop .rectangle-5 {
+.rectangle-5 {
     width: 92px;
     position: relative;
     height: 834px;
@@ -115,7 +120,7 @@
     background-color: var(--greysgrey-8);
 }
 
-.desktop .courseListTitle {
+.courseListTitle {
     display: flex;
     width: 255px;
     height: 60px;
@@ -130,18 +135,18 @@
 }
 
 
-.desktop .WF-header {
+.WF-header {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
     position: absolute;
     top: 0;
-    background-color:#224870 ;
+    background-color: #224870;
     overflow: hidden;
 }
 
-.desktop .padding {
+.padding {
     display: flex;
     width: 300px;
     height: 109px;
@@ -152,7 +157,7 @@
     position: relative;
 }
 
-.desktop .WF-logo-placeholder {
+.WF-logo-placeholder {
     display: flex;
     width: 300px;
     height: 48px;
@@ -162,36 +167,47 @@
     position: relative;
     margin-left: -20.5px;
     margin-right: -20.5px;
-    background-color:#224870;
+    background-color: #224870;
     border-radius: 4px;
     overflow: hidden;
 }
 
-.WF-utility-app-wrapper .WF-title-bar {
-    display: flex;
-    width: 100vw;
-    align-items: flex-start;
-    padding-left: 10px;
-    /*position: absolute;*/
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-color: var(--wf-base800);
-    background: var(--darker-background-color);
+/*.WF-utility-app-wrapper .WF-title-bar {*/
+/*    display: flex;*/
+/*    width: 100vw;*/
+/*    align-items: flex-start;*/
+/*    padding-left: 10px;*/
+/*    !*position: absolute;*!*/
+/*    border-bottom-width: 2px;*/
+/*    border-bottom-style: solid;*/
+/*    border-color: var(--wf-base800);*/
+/*    background: var(--darker-background-color);*/
+/*}*/
+
+.scheduling-input {
+    position: relative;
+    flex: 1;
+    align-self: center;
+    font-family: 'Comfortaa';
+    font-weight: var(--WF-headings-heading-m-font-weight);
+    color: white;
+    font-size: var(--WF-headings-heading-m-font-size);
+    letter-spacing: var(--WF-headings-heading-m-letter-spacing);
+    line-height: var(--WF-headings-heading-m-line-height);
+    font-style: italic;
 }
 
-.WF-utility-app-wrapper .logo {
+.logo {
     width: 88px;
     height: 84px;
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
     background: var(--darker-background-color);
-    left: 1425px;
-    position: absolute;
 }
 
 
-.desktop .text-wrapper {
+.text-wrapper {
     position: relative;
     width: fit-content;
     margin-top: 25px;
@@ -206,9 +222,7 @@
 }
 
 
-
-
-.desktop .vector {
+.vector {
     position: absolute;
     width: 88px;
     height: 84px;
@@ -216,7 +230,7 @@
     left: 1555px;
 }
 
-.desktop .inputCourseBackground {
+.inputCourseBackground {
     display: flex;
     flex-direction: column;
     /* width: 498px; */
@@ -233,17 +247,17 @@
     background-color: #a3c4e2;
 }
 
-.desktop .WF-input-field {
+.WF-input-field {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
     align-self: stretch;
-    width: 100%;
+    /*width: 100%;*/
     flex: 0 0 auto;
 }
 
-.desktop .WF-input-field-2 {
+.WF-input-field-2 {
     align-self: stretch;
     width: 100%;
     display: flex;
@@ -255,7 +269,7 @@
     flex: 0 0 auto;
 }
 
-.desktop .label-stack {
+.label-stack {
     display: flex;
     align-items: flex-start;
     gap: 10px;
@@ -265,7 +279,7 @@
     flex: 0 0 auto;
 }
 
-.desktop .label {
+.label {
     position: relative;
     flex: 1;
     margin-top: -1px;
@@ -282,7 +296,7 @@ body {
 
 }
 
-.desktop .text-input {
+.text-input {
     position: relative;
     align-self: stretch;
     width: 100%;
@@ -294,17 +308,71 @@ body {
     font-family: var(--top-level-font);
 }
 
-.desktop .core-course-option {
+.core-course-option {
     display: flex;
     flex-direction: column;
-    width: 405px;
-    height: 344px;
+    /* width: 405px; */
+    height: 400px;
     align-items: flex-start;
     gap: 16px;
     position: relative;
 }
 
-.desktop .WF-input-field-3 {
+.input-table {
+    table-layout: auto;
+    position: relative;
+    margin: auto;
+    /*padding-top: 10px;*/
+}
+
+.WF-title-bar {
+    display: flex;
+    width: 100vw;
+    align-items: flex-start;
+    padding-left: 10px;
+    position: absolute;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: var(--wf-base800);
+    background: var(--darker-background-color);
+}
+
+.timeslot-parent-div {
+    background: var(--lighter-background-color);
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: var(--wf-base800);
+    min-width: 409px;
+    width: 409px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.input-table ::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.input-table ::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grey;*/
+    border-radius: 10px;
+}
+
+/* Handle */
+
+.input-table ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+.spacing-td {
+    width: 5vw;
+}
+
+.WF-input-field-3 {
     width: 405px;
     display: flex;
     flex-direction: column;
@@ -315,7 +383,7 @@ body {
     flex: 0 0 auto;
 }
 
-.desktop .img {
+.img {
     position: absolute;
     width: 30px;
     height: 24px;
@@ -323,7 +391,7 @@ body {
     left: 359px;
 }
 
-.desktop .WF-option {
+.WF-option {
     display: flex;
     align-items: center;
     position: relative;
@@ -332,7 +400,7 @@ body {
     flex: 0 0 auto;
 }
 
-.desktop .WF-list-options {
+.WF-list-options {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -347,7 +415,7 @@ body {
     border-color: var(--wf-base400);
 }
 
-.desktop .expanded-class-version {
+.expanded-class-version {
     display: flex;
     /*align-items: center;*/
     justify-content: flex-end;
@@ -358,13 +426,14 @@ body {
     border-radius: 6px;
     border: 2px solid;
     border-color: var(--wf-base400);
+    width: 100%;
 }
 
 .timeslot-table {
     font-size: smaller;
 }
 
-.desktop .text-wrapper-3 {
+.text-wrapper-3 {
     position: relative;
     flex: 1;
     margin-top: -2px;
@@ -377,7 +446,21 @@ body {
     font-style: var(--WF-body-body-medium-font-style);
 }
 
-.desktop .WF-list-options-wrapper {
+.next-btn {
+    width: 100%;
+    color: #fff;
+    background: darkgreen;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--top-level-font);
+}
+
+.WF-list-options-wrapper {
     display: flex;
     align-items: center;
     margin-bottom: -48px;
@@ -387,7 +470,7 @@ body {
     flex: 0 0 auto;
 }
 
-.desktop .WF-option-2 {
+.WF-option-2 {
     margin-bottom: -112px;
     position: relative;
     align-self: stretch;
@@ -395,7 +478,7 @@ body {
     flex: 0 0 auto;
 }
 
-.desktop .WF-button-large {
+.WF-button-large {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -404,7 +487,7 @@ body {
     margin-bottom: -184px;
 }
 
-.desktop .WF-option-3 {
+.WF-option-3 {
     margin-bottom: -248px;
     position: relative;
     align-self: stretch;
@@ -415,28 +498,121 @@ body {
 
 /*just absolutely ripped from lu */
 @media screen {
-    #content .ludHLWarning, table.ludTableGrid td.ludHLWarning {background:#FFFFAA; border:2px double #FF0000; font-style:italic;}
+    #content .ludHLWarning, table.ludTableGrid td.ludHLWarning {
+        background: #FFFFAA;
+        border: 2px double #FF0000;
+        font-style: italic;
+    }
 }
 
 @media print {
-    #content table.ludTableGrid {width:100%; empty-cells:show; font-size:.85em; }
-    #content table.ludTableGrid td {border:1px solid #F0F0F0; background:#FDFDFD; padding:4px; min-width:100%; width:auto; text-align:center;}
-    #content table.ludTableGrid td.currency {border:1px solid #F0F0F0; background:#FDFDFD; padding:4px; min-width:100%; width:auto; text-align:right;}
-    #content table.ludTableGrid td.ludLabel {background:#F0F0F0; color:#000;font-weight:bold; text-align:left;}
-    #content table.ludTableGrid th {border:none; background:#002485; color:#FFF; padding:4px; text-transform:uppercase;}
-    #content table.ludTableGrid hr {margin:0; padding:0; display:none;}
-    #content table {font-family:Arial;}
-    #content table th {border:none; color:#000; padding:4px; text-transform:uppercase; text-align:center;}
-    #content table td {width:auto; text-align:left; border:none;}
-    #content table td.ludLabel {color:#000;font-weight:bold; text-align:left;}
-    #content table.ludTableGridDark {border-collapse: collapse;border:1px solid #AAA;}
-    #content table.ludTableGridDark td, th{border:1px solid #000;}
-    #content table.ludTableGridLight {border-collapse: collapse;border:1px solid #AAA;}
-    #content table.ludTableGridLight td, th{border:1px dotted #AAA;}
-    #content .ludHLNormal, table.ludTableGrid td.ludHLNormal {background:#E0E0FF !important; border:1px solid #AAA;}
-    #content .ludHLError, table.ludTableGrid td.ludHLError {background:#FFAAAA; border:2px double #FF0000; font-style:italic;}
-    #content .ludHLWarning, table.ludTableGrid td.ludHLWarning {background:#FFFFAA; border:2px double #FF0000; font-style:italic;}
-    #content .ludHLSpecial, table.ludTableGrid td.ludHLSpecial {background:#CCFFDD;}
+    #content table.ludTableGrid {
+        width: 100%;
+        empty-cells: show;
+        font-size: .85em;
+    }
+
+    #content table.ludTableGrid td {
+        border: 1px solid #F0F0F0;
+        background: #FDFDFD;
+        padding: 4px;
+        min-width: 100%;
+        width: auto;
+        text-align: center;
+    }
+
+    #content table.ludTableGrid td.currency {
+        border: 1px solid #F0F0F0;
+        background: #FDFDFD;
+        padding: 4px;
+        min-width: 100%;
+        width: auto;
+        text-align: right;
+    }
+
+    #content table.ludTableGrid td.ludLabel {
+        background: #F0F0F0;
+        color: #000;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    #content table.ludTableGrid th {
+        border: none;
+        background: #002485;
+        color: #FFF;
+        padding: 4px;
+        text-transform: uppercase;
+    }
+
+    #content table.ludTableGrid hr {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    #content table {
+        font-family: Arial;
+    }
+
+    #content table th {
+        border: none;
+        color: #000;
+        padding: 4px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    #content table td {
+        width: auto;
+        text-align: left;
+        border: none;
+    }
+
+    #content table td.ludLabel {
+        color: #000;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    #content table.ludTableGridDark {
+        border-collapse: collapse;
+        border: 1px solid #AAA;
+    }
+
+    #content table.ludTableGridDark td, th {
+        border: 1px solid #000;
+    }
+
+    #content table.ludTableGridLight {
+        border-collapse: collapse;
+        border: 1px solid #AAA;
+    }
+
+    #content table.ludTableGridLight td, th {
+        border: 1px dotted #AAA;
+    }
+
+    #content .ludHLNormal, table.ludTableGrid td.ludHLNormal {
+        background: #E0E0FF !important;
+        border: 1px solid #AAA;
+    }
+
+    #content .ludHLError, table.ludTableGrid td.ludHLError {
+        background: #FFAAAA;
+        border: 2px double #FF0000;
+        font-style: italic;
+    }
+
+    #content .ludHLWarning, table.ludTableGrid td.ludHLWarning {
+        background: #FFFFAA;
+        border: 2px double #FF0000;
+        font-style: italic;
+    }
+
+    #content .ludHLSpecial, table.ludTableGrid td.ludHLSpecial {
+        background: #CCFFDD;
+    }
 }
 
 .XWBP-Wrapper {
@@ -460,18 +636,18 @@ body {
 
 .XWBP-Link-List a:hover {
     text-decoration: underline;
-    color: #242424!important
+    color: #242424 !important
 }
 
 .XWBP-Label {
     box-sizing: unset;
     bottom: .625rem;
-    padding-right: 1.25rem!important
+    padding-right: 1.25rem !important
 }
 
 .XWBP-Ellucian-Label-Overwrite {
-    left: .25rem!important;
-    margin-left: 29px!important
+    left: .25rem !important;
+    margin-left: 29px !important
 }
 
 .XWBP-Table {
@@ -480,7 +656,7 @@ body {
     /*width: 100%*/
 }
 
-.XWBP-Table td,.XWBP-Table th {
+.XWBP-Table td, .XWBP-Table th {
     padding: 8px;
     text-align: left;
     width: 140px;
@@ -503,14 +679,11 @@ body {
 
 .spacer-wrap {
     table-layout: auto;
-    position: relative;
     background: var(--lighter-background-color);
     border-bottom-width: 2px;
     border-style: solid;
     border-radius: 4px;
     border-color: var(--wf-base800);
-    width: 52vw;
-    margin-left: 30px;
     margin-top: 135px;
 }
 
@@ -520,23 +693,23 @@ body {
     padding-top: 10px;
 
     height: 62vh;
-    overflow: scroll;
+    overflow-y: scroll;
     /*margin-left: 30px;*/
     /*margin-top: 135px;*/
 }
 
-.desktop .WF-utility-app-wrapper  ::-webkit-scrollbar {
+.WF-utility-app-wrapper ::-webkit-scrollbar {
     width: 5px;
 }
 
 /* Track */
-.desktop .WF-utility-app-wrapper  ::-webkit-scrollbar-track {
+.WF-utility-app-wrapper ::-webkit-scrollbar-track {
     /*box-shadow: inset 0 0 5px grey;*/
     border-radius: 10px;
 }
 
 /* Handle */
-.desktop .WF-utility-app-wrapper .schedule-wrapper ::-webkit-scrollbar-thumb {
+.WF-utility-app-wrapper .schedule-wrapper ::-webkit-scrollbar-thumb {
     background: gray;
     border-radius: 10px;
 }
