@@ -480,8 +480,7 @@
             timeSlotElement.timeSlotID = timeSlot.TimeSlotID;
 
             timeSlotElement.classList.add("WF-option");
-
-
+            timeSlotElement.id = timeSlotElement.timeSlotID;
 
 
             let timeSlotHTMLString = `<td><div class="expanded-class-version">
@@ -535,11 +534,11 @@
         document.getElementById("classList").value = courseID;
     }
 
-    function selectCourse(course){
+    function selectCourse(course) {
         let elements = [];
 
         elements = document.getElementsByClassName(course);
-        for(element of elements)
+        for (element of elements)
             element.hidden = !element.hidden;
     }
 
