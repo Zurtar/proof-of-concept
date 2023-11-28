@@ -310,10 +310,10 @@
                     <div class="label-stack">
                         <div class="label">Input Course Change</div>
                     </div>
-                    <select id="classList" name="classList" class="text-input"></select>
+                    <select id="classList" name="classList" class="text-input" onchange="populateTimeSlots()"></select>
                 </div>
             </div>
-            <div class="core-course-option">
+            <div class="core-course-option" id="timeslot-list">
                 <div class="WF-input-field-3">
                     <div class="label-stack">
                         <div class="label">Available Time Slots</div>
@@ -328,7 +328,7 @@
                             <table class="timeslot-table">
                                 <tbody>
                                 <tr>
-<!--                                    <div class="expanded-impact-view"></div>-->
+                                    <!--                                    <div class="expanded-impact-view"></div>-->
                                     <td><span> Comp. Programming I: W, Th 12:30pm - 2:00pm&emsp;&emsp;</span></td>
                                     <td><span style="color: darkgreen">87%</span></td>
                                 </tr>
@@ -371,7 +371,6 @@
 <script>
 
     let teachersCourses = [];
-
     init();
 
     function init() {
@@ -400,12 +399,52 @@
     function courseSearchList() {
         var list = document.getElementById("classList");
         for (course of teachersCourses) {
-
             list.innerHTML += '<option value="' + course.Id + '">' + course.CourseCode + '</option>';
-
-
         }
+    }
 
+    function populateTimeSlots() {
+        let timeSlotList = document.getElementById("timeslot-list");
+        let courseID = document.getElementById("classList").value;
+
+        // I missed this
+        let course = teachersCourses.find(course => course.Id == courseID);
+
+        for (timeSlot of course.PossibleTimeSlots) {
+            let timeSlotElement = document.createElement("div");
+            timeSlotElement.classList.add("WF-option");
+
+            let timeSlotHTMLString = `<div className="expanded-class-version">
+                    <div className="text-wrapper-3">
+                        <table className="timeslot-table">
+                            <tbody>
+                            <tr>
+                                <td><span>` + course.Title + ": " + timeSlot.TimeSlotString + "  " + `</span></td>
+                                <td><span style="color: darkgreen">87%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>Students Unaffected:</span></td>
+                                <td><span>` + timeSlot.StudentsWithoutConflict + "/" + timeSlot.StudentCount + `</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>Student Conflicts:</span></td>
+                                <td><span>` + timeSlot.StudentsWithConflict + "/" + timeSlot.StudentCount + `</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>Required Conflicts:</span></td>
+                                <td><span>` + timeSlot.RequiredCourseStudents + "/" + timeSlot.StudentCount + `</span></td>
+                            </tr>
+                             <tr>
+                                <td><span>Elective Conflicts:</span></td>
+                                <td><span>` + timeSlot.ElectiveCourseStudents + "/" + timeSlot.StudentCount + `</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>`;
+
+            timeSlotElement.innerHTML += timeSlotHTMLString;
+        }
     }
 
 

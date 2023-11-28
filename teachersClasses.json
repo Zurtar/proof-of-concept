@@ -23,6 +23,16 @@
           "CorequisiteCourseId": null,
           "IsProtected": false
         }
+      ],
+      "PossibleTimeSlots:": [
+        {
+          "TimeSlotString": "",
+          "StudentCount": 0,
+          "StudentsWithoutConflict": 0,
+          "StudentsWithConflict": 0,
+          "RequiredCourseStudents": 0,
+          "ElectiveCourseStudents": 0
+        }
       ]
     },
     {
@@ -62,8 +72,19 @@
           "CorequisiteCourseId": null,
           "IsProtected": false
         }
+      ],
+      "PossibleTimeSlots:": [
+        {
+          "TimeSlotString": "",
+          "StudentCount": 0,
+          "StudentsWithoutConflict": 0,
+          "StudentsWithConflict": 0,
+          "RequiredCourseStudents": 0,
+          "ElectiveCourseStudents": 0
+        }
       ]
-    },{
+    },
+    {
       "Id": "17626",
       "SubjectCode": "COMP",
       "CourseCode": "COMP-4111",
@@ -86,8 +107,19 @@
           "CorequisiteCourseId": null,
           "IsProtected": true
         }
+      ],
+      "PossibleTimeSlots:": [
+        {
+          "TimeSlotString": "",
+          "StudentCount": 0,
+          "StudentsWithoutConflict": 0,
+          "StudentsWithConflict": 0,
+          "RequiredCourseStudents": 0,
+          "ElectiveCourseStudents": 0
+        }
       ]
-    },{
+    },
+    {
       "Id": "10460",
       "SubjectCode": "COMP",
       "CourseCode": "COMP-4411",
@@ -111,7 +143,8 @@
           "IsProtected": true
         }
       ]
-    },{
+    },
+    {
       "Id": "6822",
       "SubjectCode": "ECON",
       "CourseCode": "ECON-3117",
@@ -148,8 +181,19 @@
           "CorequisiteCourseId": null,
           "IsProtected": false
         }
+      ],
+      "PossibleTimeSlots:": [
+        {
+          "TimeSlotString": "",
+          "StudentCount": 0,
+          "StudentsWithoutConflict": 0,
+          "StudentsWithConflict": 0,
+          "RequiredCourseStudents": 0,
+          "ElectiveCourseStudents": 0
+        }
       ]
-    },{
+    },
+    {
       "Id": "15302",
       "SubjectCode": "EDUC",
       "CourseCode": "EDUC-3110",
@@ -172,8 +216,19 @@
           "CorequisiteCourseId": null,
           "IsProtected": true
         }
+      ],
+      "PossibleTimeSlots:": [
+        {
+          "TimeSlotString": "",
+          "StudentCount": 0,
+          "StudentsWithoutConflict": 0,
+          "StudentsWithConflict": 0,
+          "RequiredCourseStudents": 0,
+          "ElectiveCourseStudents": 0
+        }
       ]
-    },{
+    },
+    {
       "Id": "14887",
       "SubjectCode": "MATH",
       "CourseCode": "MATH-1210",
@@ -196,6 +251,17 @@
           "CorequisiteCourseId": null,
           "IsProtected": false
         }
+      ],
+      "PossibleTimeSlots:": [
+        {
+          "TimeSlotString": "",
+          "StudentCount": 0,
+          "StudentsWithoutConflict": 0,
+          "StudentsWithConflict": 0,
+          "RequiredCourseStudents": 0,
+          "ElectiveCourseStudents": 0
+        }
       ]
-    }]
+    }
+  ]
 }
