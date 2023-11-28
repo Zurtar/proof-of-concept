@@ -384,7 +384,11 @@
                             <div class="course-search-input" style="margin-bottom: 0px">
                                 <div class="label">Input Course Change:</div>
                                 <select id="classList" name="classList" class="text-input"
-                                        onchange="populateTimeSlots()"></select>
+                                        onchange="populateTimeSlots()">
+                                    <option value="0000" selected>
+                                        Select a Class.
+                                    </option>
+                                </select>
                             </div>
                         </th>
                     </tr>
@@ -482,6 +486,21 @@
             timeSlotElement.classList.add("WF-option");
             timeSlotElement.id = timeSlotElement.timeSlotID;
 
+            let score = Math.floor(parseInt(timeSlot.StudentsWithoutConflict) / parseInt(timeSlot.StudentCount) * 100);
+            let colour = '';
+            if (score >= 70) {
+                colour = "darkgreen";
+            } else if (score >= 70) {
+                // yellow
+                colour = "rgb(255, 234, 0)";
+            } else if (score >= 50) {
+                //orange
+                colour = "rgb(255, 121, 0)";
+            } else {
+                //red
+                colour = "rgb(243, 32, 19)";
+            }
+
 
             let timeSlotHTMLString = `<td><div class="expanded-class-version">
                     <div class="text-wrapper-3">
@@ -490,7 +509,7 @@
                             <tbody>
                             <tr>
                                 <td><span>` + course.Title + ": " + timeSlot.TimeSlotString + `&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                <td><span style="color: darkgreen">` + (100 - Math.floor(parseInt(timeSlot.StudentsWithoutConflict) / parseInt(timeSlot.StudentCount) * 100)) + `%</span></td>
+                                <td><span style="color: ` + colour + `">` + Math.floor(parseInt(timeSlot.StudentsWithoutConflict) / parseInt(timeSlot.StudentCount) * 100) + `%</span></td>
                             </tr>
                             <tr class="` + timeSlot.TimeSlotID + `" hidden="hidden">
                                 <td><span>Students Unaffected:</span></td>
@@ -501,11 +520,11 @@
                                 <td><span>` + timeSlot.StudentsWithConflict + "/" + timeSlot.StudentCount + `</span></td>
                             </tr>
                                <tr class="` + timeSlot.TimeSlotID + `"  hidden="hidden">
-                                <td><span>Required Conflicts:</span></td>
+                                <td><span>Required Course Conflicts:</span></td>
                                 <td><span>` + timeSlot.RequiredCourseStudents + "/" + timeSlot.StudentCount + `</span></td>
                             </tr>
                              <tr class="` + timeSlot.TimeSlotID + `"  hidden="hidden">
-                                <td><span>Elective Conflicts:</span></td>
+                                <td><span>Elective Course Conflicts:</span></td>
                                 <td><span>` + timeSlot.ElectiveCourseStudents + "/" + timeSlot.StudentCount + `</span></td>
                             </tr>
                             </tbody>
