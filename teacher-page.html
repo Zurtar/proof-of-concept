@@ -490,7 +490,7 @@
                             <tbody>
                             <tr>
                                 <td><span>` + course.Title + ": " + timeSlot.TimeSlotString + `&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                <td><span style="color: darkgreen">` + 100 - Math.floor(parseInt(timeSlot.StudentsWithoutConflict) / parseInt(timeSlot.StudentCount) * 100) + `%</span></td>
+                                <td><span style="color: darkgreen">` + (100 - Math.floor(parseInt(timeSlot.StudentsWithoutConflict) / parseInt(timeSlot.StudentCount) * 100)) + `%</span></td>
                             </tr>
                             <tr class="` + timeSlot.TimeSlotID + `" hidden="hidden">
                                 <td><span>Students Unaffected:</span></td>
