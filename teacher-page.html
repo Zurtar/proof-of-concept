@@ -476,29 +476,36 @@
 
         for (timeSlot of timeSlots) {
             let timeSlotElement = timeSlotList.insertRow();
+
+            timeSlotElement.timeSlotID = timeSlot.TimeSlotID;
+
             timeSlotElement.classList.add("WF-option");
+
+
+
 
             let timeSlotHTMLString = `<td><div class="expanded-class-version">
                     <div class="text-wrapper-3">
+                    <input type="checkbox" id="course_select_` + timeSlot.TimeSlotID + `" hidden="hidden">
                         <table class="timeslot-table">
                             <tbody>
                             <tr>
                                 <td><span>` + course.Title + ": " + timeSlot.TimeSlotString + `&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
                                 <td><span style="color: darkgreen">` + Math.floor(parseInt(timeSlot.StudentsWithConflict) / parseInt(timeSlot.StudentCount) * 100) + `%</span></td>
                             </tr>
-                            <tr class="` + courseID + `" hidden="hidden">
+                            <tr class="` + timeSlot.TimeSlotID + `" hidden="hidden">
                                 <td><span>Students Unaffected:</span></td>
                                 <td><span>` + timeSlot.StudentsWithoutConflict + "/" + timeSlot.StudentCount + `</span></td>
                             </tr>
-                           <tr class="` + courseID + `"  hidden="hidden">
+                           <tr class="` + timeSlot.TimeSlotID + `"  hidden="hidden">
                                 <td><span>Student Conflicts:</span></td>
                                 <td><span>` + timeSlot.StudentsWithConflict + "/" + timeSlot.StudentCount + `</span></td>
                             </tr>
-                               <tr class="` + courseID + `"  hidden="hidden">
+                               <tr class="` + timeSlot.TimeSlotID + `"  hidden="hidden">
                                 <td><span>Required Conflicts:</span></td>
                                 <td><span>` + timeSlot.RequiredCourseStudents + "/" + timeSlot.StudentCount + `</span></td>
                             </tr>
-                             <tr class="` + courseID + `"  hidden="hidden">
+                             <tr class="` + timeSlot.TimeSlotID + `"  hidden="hidden">
                                 <td><span>Elective Conflicts:</span></td>
                                 <td><span>` + timeSlot.ElectiveCourseStudents + "/" + timeSlot.StudentCount + `</span></td>
                             </tr>
@@ -510,6 +517,10 @@
             timeSlotElement.innerHTML = timeSlotHTMLString;
             // timeSlotList.innerHTML += timeSlotElement.toString();
             // timeSlotList.appendChild(timeSlotElement);
+
+            timeSlotElement.onclick = function () {
+                selectCourse(this.timeSlotID)
+            };
         }
 
         // timeSlotList.innerHTML += `                        <tr>
@@ -522,6 +533,14 @@
         //             </table>`;
 
         document.getElementById("classList").value = courseID;
+    }
+
+    function selectCourse(course){
+        let elements = [];
+
+        elements = document.getElementsByClassName(course);
+        for(element of elements)
+            element.hidden = !element.hidden;
     }
 
 
