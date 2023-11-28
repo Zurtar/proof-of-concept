@@ -133,7 +133,7 @@
 .desktop .WF-header {
     display: flex;
     flex-direction: column;
-    width: 1650px;
+    width: 100%;
     align-items: flex-start;
     position: absolute;
     top: 0;
@@ -167,10 +167,34 @@
     overflow: hidden;
 }
 
+.WF-utility-app-wrapper .WF-title-bar {
+    display: flex;
+    width: 100vw;
+    align-items: flex-start;
+    padding-left: 10px;
+    /*position: absolute;*/
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: var(--wf-base800);
+    background: var(--darker-background-color);
+}
+
+.WF-utility-app-wrapper .logo {
+    width: 88px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    background: var(--darker-background-color);
+    left: 1425px;
+    position: absolute;
+}
+
+
 .desktop .text-wrapper {
     position: relative;
     width: fit-content;
-    margin-top: -1px;
+    margin-top: 25px;
     font-family: "Comfortaa", SansSerif;
     font-weight: var(--WF-buttons-button-medium-font-weight);
     color: var(--wf-basewhite);
@@ -253,6 +277,11 @@
     line-height: 16px;
 }
 
+body {
+    font-family: var(--top-level-font);
+
+}
+
 .desktop .text-input {
     position: relative;
     align-self: stretch;
@@ -262,6 +291,7 @@
     border-radius: 6px;
     border: 2px solid;
     border-color: var(--wf-base400);
+    font-family: var(--top-level-font);
 }
 
 .desktop .core-course-option {
@@ -330,11 +360,15 @@
     border-color: var(--wf-base400);
 }
 
+.timeslot-table {
+    font-size: smaller;
+}
+
 .desktop .text-wrapper-3 {
     position: relative;
     flex: 1;
     margin-top: -2px;
-    font-family: var(--WF-body-body-medium-font-family);
+    font-family: var(--top-level-font);
     font-weight: var(--WF-body-body-medium-font-weight);
     color: var(--wf-base800);
     font-size: var(--WF-body-body-medium-font-size);
@@ -441,7 +475,7 @@
 }
 
 .XWBP-Table {
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: var(--top-level-font);
     border-collapse: collapse;
     /*width: 100%*/
 }
