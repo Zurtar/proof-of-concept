@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 </head>
-<body>
+<body style="background-color: #E5EDF1;">
 <header>
     <div class="WF-title-bar">
         <div class="scheduling-input">myScheduling</div>
@@ -214,8 +214,7 @@
                                             Comp-3413L-F1<br>LAB<br>AT-3002<br>Mr.
                                             M. Moniruzzaman
                                         </td>
-                                        <td rowspan="3" class="ludHLNormal" style="border: 1px solid black;
-    background: indianred;">
+                                        <td rowspan="3" class="ludHLNormal" style="border: 1px solid black;">
                                             Comp-1411-FA<br><br><br>Dr.
                                             A. Nazari Shirehjini
                                         </td>
@@ -377,79 +376,82 @@
         <td class="spacing-td"></td>
         <td>
             <table class="input-table-2">
-            <tbody style="vertical-align: baseline">
+                <tbody style="vertical-align: baseline">
                 <tr>
                     <td colspan="1" class="course-result-container">
                         <div class="course-search-input">
                             <div class="label">Class Change Summary:</div>
-<!--                            <i class="fa-solid fa-magnifying-glass" style="-->
-<!--    top: 45px;-->
-<!--    position: absolute;-->
-<!--    z-index: 1;-->
-<!--    left: 370px;-->
-<!--"></i>-->
-<!--                            <input type="text" class="text-input" id="core-course-list-input"-->
-<!--                                   oninput="updateCourseList('core-course-list')">-->
+                            <!--                            <i class="fa-solid fa-magnifying-glass" style="-->
+                            <!--    top: 45px;-->
+                            <!--    position: absolute;-->
+                            <!--    z-index: 1;-->
+                            <!--    left: 370px;-->
+                            <!--"></i>-->
+                            <!--                            <input type="text" class="text-input" id="core-course-list-input"-->
+                            <!--                                   oninput="updateCourseList('core-course-list')">-->
                         </div>
                         <div class="core-course-option" id="core-course-list">
-                            <div class="course-result">
-                                    <div class="expanded-class-version">
-                                        <div class="text-wrapper-3">
-                                            <table class="timeslot-table">
-                                                <tbody>
-                                                <tr>
-                                                    <td><span>Comp-1411: Computer Programming II</span></td>
-<!--                                                    <td><span style="color: darkgreen"> + Math.floor(parseInt(timeSlot.StudentsWithConflict) / parseInt(timeSlot.StudentCount) * 100) + %</span></td>-->
-                                                </tr>
-                                                <tr>
-                                                    <td><span>Mon., Wed. 2:30-4:00pm -> Tue., Thur 12:30-2pm</span></td>
-<!--                                                    <td><span> + timeSlot.StudentsWithoutConflict + "/" + timeSlot.StudentCount + </span></td>-->
-                                                </tr>
-                                                <tr>
-                                                    <td><span style="font-weight: bold">Reasoning:</span></td>
-<!--                                                    <td><span>Original lecture hall is undergoing maintenance, class must move to accommodate the new lecture hall availability. </span></td>-->
-                                                </tr>
-                                                <tr>
-                                                    <td><span>Original lecture hall is undergoing maintenance, class must move to accommodate the new lecture hall availability.</span></td>
-<!--                                                    <td><span> + timeSlot.RequiredCourseStudents + "/" + timeSlot.StudentCount + </span></td>-->
-                                                </tr>
-<!--                                                <tr>-->
-<!--                                                    <td><span>Elective Conflicts:</span></td>-->
-<!--                                                    <td><span> + timeSlot.ElectiveCourseStudents + "/" + timeSlot.StudentCount + </span></td>-->
-<!--                                                </tr>-->
-                                                </tbody>
-                                            </table>
-                                        </div>
+                            <div class="course-result" style="background-color: var(--lighter-background-color);">
+                                <div class="expanded-class-version">
+                                    <div class="text-wrapper-3">
+                                        <table class="timeslot-table">
+                                            <tbody>
+                                            <tr>
+                                                <td><span>Comp-1411: Computer Programming II</span></td>
+                                                <!--                                                    <td><span style="color: darkgreen"> + Math.floor(parseInt(timeSlot.StudentsWithConflict) / parseInt(timeSlot.StudentCount) * 100) + %</span></td>-->
+                                            </tr>
+                                            <tr>
+                                                <td><span>Mon., Wed. 2:30-4:00pm -> Tue., Thur 12:30-2pm</span></td>
+                                                <!--                                                    <td><span> + timeSlot.StudentsWithoutConflict + "/" + timeSlot.StudentCount + </span></td>-->
+                                            </tr>
+                                            <tr>
+                                                <td><span style="font-weight: bold">Reasoning:</span></td>
+                                                <!--                                                    <td><span>Original lecture hall is undergoing maintenance, class must move to accommodate the new lecture hall availability. </span></td>-->
+                                            </tr>
+                                            <tr>
+                                                <td><span>Original lecture hall is undergoing maintenance, class must move to accommodate the new lecture hall availability.</span>
+                                                </td>
+                                                <!--                                                    <td><span> + timeSlot.RequiredCourseStudents + "/" + timeSlot.StudentCount + </span></td>-->
+                                            </tr>
+                                            <!--                                                <tr>-->
+                                            <!--                                                    <td><span>Elective Conflicts:</span></td>-->
+                                            <!--                                                    <td><span> + timeSlot.ElectiveCourseStudents + "/" + timeSlot.StudentCount + </span></td>-->
+                                            <!--                                                </tr>-->
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </td>
                 </tr>
-            <tr>
-                <td colspan="1" class="course-result-container">
-                    <div class="course-search-input" style="    margin-bottom: 10px;">
-                        <div class="label">Provide Feedback:</div>
-                        <!--                            <i class="fa-solid fa-magnifying-glass" style="-->
-                        <!--    top: 45px;-->
-                        <!--    position: absolute;-->
-                        <!--    z-index: 1;-->
-                        <!--    left: 370px;-->
-                        <!--"></i>-->
-                        <!--                            <input type="text" class="text-input" id="core-course-list-input"-->
-                        <!--                                   oninput="updateCourseList('core-course-list')">-->
-                    </div>
-                    <div>
-                        <textarea class="student-feedback-input" type="text" placeholder="Type Here." style="font-family: var(--top-level-font);"> </textarea>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="next-btn" type="button" onclick="alert('Feedback Submitted! Thank you.')">Submit Feedback
-                    </button>
-                </td>
-            </tr>
-            </tbody>
+                <tr>
+                    <td colspan="1" class="course-result-container">
+                        <div class="course-search-input" style="    margin-bottom: 10px;">
+                            <div class="label">Provide Feedback:</div>
+                            <!--                            <i class="fa-solid fa-magnifying-glass" style="-->
+                            <!--    top: 45px;-->
+                            <!--    position: absolute;-->
+                            <!--    z-index: 1;-->
+                            <!--    left: 370px;-->
+                            <!--"></i>-->
+                            <!--                            <input type="text" class="text-input" id="core-course-list-input"-->
+                            <!--                                   oninput="updateCourseList('core-course-list')">-->
+                        </div>
+                        <div>
+                            <textarea class="student-feedback-input" type="text" placeholder="Type Here."
+                                      style="font-family: var(--top-level-font);"> </textarea>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="next-btn" type="button" onclick="alert('Feedback Submitted! Thank you.')">Submit
+                            Feedback
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
             </table>
         </td>
     </tr>
