@@ -11,6 +11,60 @@
 ;
 }
 
+/*wrapper for core-course results*/
+.core-course-option {
+    display: flex;
+    flex-direction: column;
+    /* width: 405px; */
+    /* height: 400px; */
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    top: -18px;
+
+    /*this makes it keep its look when we resize*/
+    max-height: 62vh;
+    overflow-y: auto;
+}
+
+.course-search-input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: 32px;
+    padding-top: 5px;
+}
+
+
+.course-result-container {
+    /*overflow-y: scroll;*/
+    /*background: var(--lighter-background-color);*/
+    /*border: 2px solid #a3c4e2;*/
+    /*border-radius: 2px;*/
+}
+
+.course-result {
+    display: flex;
+    align-items: center;
+    /*justify-content: flex-end;*/
+    gap: 10px;
+    padding: 12px 12px 12px 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    border-radius: 6px;
+    border: 2px solid;
+    border-color: var(--wf-base400);
+    align-self: stretch;
+    width: 100%;
+    background: white;
+}
+
 .WF-utility-app-wrapper {
     background-color: #E5EDF1;
     overflow-x: hidden;
@@ -307,12 +361,17 @@ body {
     border-color: var(--wf-base400);
     font-family: var(--top-level-font);
 }
+.student-feedback-input {
+    height: 100px;
+    width: 100%;;
+}
+
 
 .core-course-option {
     display: flex;
     flex-direction: column;
-    /* width: 405px; */
-    height: 400px;
+     width: 405px;
+    /*height: 400px;*/
     align-items: flex-start;
     gap: 16px;
     position: relative;
@@ -324,6 +383,21 @@ body {
     margin: auto;
     /*padding-top: 10px;*/
 }
+
+.input-table-2 {
+    table-layout: auto;
+    position: relative;
+    background: var(--lighter-background-color);
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: var(--wf-base800);
+    margin: auto;
+    top: 3vh;
+    padding-top: 10px;
+    min-height: 55vh;
+}
+
 
 .WF-title-bar {
     display: flex;
